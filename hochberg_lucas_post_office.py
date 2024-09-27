@@ -29,9 +29,9 @@ def get_type(length, height, thickness): # creates he function "get_type" and cr
         return "envelope" # set the output equal to "envelope"
     elif length>6.125 and length<24 and height>=11 and height<=18 and thickness>=.25 and thickness<=.5: # if the length is greater than 6.125 and less than 24, and the height is greater than or equal to 11 and less than or equal to 18, and the thickness is greater than or equal to .25 and less than or equal to .5
         return "large envelope" # set the output equal to "large envelope"
-    elif length>=24 and height>18 and thickness>.5 and length+2*(height+thickness)<=84: # if the length is greater than or equal to 24, and the height is greater than 18, and the length plus 2 times the height plus thickness is less than or equal to 84
+    elif length>=24 and height>18 and thickness>.5 and length+2*(height+thickness)<=84: # if the length is greater than or equal to 24, and the height is greater than 18, and the length plus 2 times the (height plus thickness) is less than or equal to 84
         return "package" # set the output equal to "package"
-    elif length+2*(height+thickness)>=84 and length+2*(height+thickness)<=130: # if the length plus 2 times the height plus thickess is greater than or equal to 84 and less than or equal to 130
+    elif length+2*(height+thickness)>=84 and length+2*(height+thickness)<=130: # if the length plus 2 times the (height plus thickess) is greater than or equal to 84 and less than or equal to 130
         return "large package" # set the output equal to "large package"
     else: # if the variable do not conform with any of the outputs
         return "unmailable" # set the output equal to nothing and print "unmailable"
