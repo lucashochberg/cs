@@ -1,21 +1,21 @@
 # Name: Lucas Hochberg
 # Log: 16.1
 # Bonus Features: None
-# Bugs: When something unmailable is entered into the data, instead of printing "unmailable," it prints "invalid response."
+# Bugs: When something unmailable is entered into the data, instead of printing "unmailable," it prints "invalid response." When an invalid zipcode is entered, the code glitches.
 # Description: Determines the price of mailing a package based on its length, height, and thickness. Also adds extra cost based on how many zones the package needs to pass through.
 
 def get_zone(zipcode): # creates the function "get_zone" and creates the variable "zipcode"
-    if 1 <= zipcode <= 6999: # if the zipcode is between 1 and 6999
+    if 1 <= zipcode <= 6999: # if the zipcode is greater than or equal to 1 and less than or equal to 6999
         return 1 # set the output equal to 1
-    elif 7000 <= zipcode <= 19999: # if the zipcode is between 7000 and 19999
+    elif 7000 <= zipcode <= 19999: # if the zipcode is greater than or equal to 7000 and less than or equal to 19999
         return 2 # set the output equal to 2
-    elif 20000 <= zipcode <= 35999: # if the zipcode is between 20000 and 35999
+    elif 20000 <= zipcode <= 35999: # if the zipcode is greater than or equal to 20000 and less than or equal to 35999
         return 3 # set the output equal to 3
-    elif 36000 <= zipcode <= 62999: # if the zipcode is between 36000 and 62999
+    elif 36000 <= zipcode <= 62999: # if the zipcode is greater than or equal to 36000 and less than or equal to 62999
         return 4 # set the output equal to 4
-    elif 63000 <= zipcode <= 84999: # if the zipcode is between 63000 and 84999
+    elif 63000 <= zipcode <= 84999: # if the zipcode is greater than or equal to 63000 and less than or equal to 84999
         return 5 # set the output equal to 5
-    elif 85000 <= zipcode <= 99999: # if the zipcode is between 85000 and 99999
+    elif 85000 <= zipcode <= 99999: # if the zipcode is greater than or equal to 85000 and less than or equal to 99999
         return 6 # set the output equal to 6
     elif 99999 < zipcode: # if the zipcode is greater than 99999
         return None # set the output equal to nothing
