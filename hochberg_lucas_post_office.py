@@ -2,7 +2,7 @@
 # Log: 1.0
 # Bonus Features: None
 # Bugs: When something unmailable is entered into the data, instead of printing "unmailable," it prints "invalid response." When an invalid zipcode is entered, the code glitches.
-# Description: Determines the price of mailing a package based on its length, height, and thickness. Also adds extra cost based on how many zones the package needs to pass through.
+# Description: Determines the price of mailing something based on its length, height, and thickness. Also adds extra cost based on how many zones the package needs to pass through.
 
 def get_zone(zipcode): # creates the function "get_zone" and creates the variable "zipcode"
     if 1 <= zipcode <= 6999: # if the zipcode is greater than or equal to 1 and less than or equal to 6999
