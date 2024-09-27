@@ -1,7 +1,7 @@
 # Name: Lucas Hochberg
 # Log: 16.1
 # Bonus Features: None
-# Bugs:
+# Bugs: When something unmailable is entered into the data, instead of printing "unmailable," it prints "invalid response."
 # Description: Determines the price of mailing a package based on its length, height, and thickness. Also adds extra cost based on how many zones the package needs to pass through.
 
 def get_zone(zipcode): # creates the function "get_zone" and creates the variable "zipcode"
