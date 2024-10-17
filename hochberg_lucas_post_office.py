@@ -106,7 +106,7 @@ def main():                                         # creates the function "main
         distance = abs(get_zone(zip1) - get_zone(zip2))                                         # distance is equal to the absolute value of zipcode 1 minus zipcode 2
         price = get_cost(mail_type, distance)                                       # in order to get the cost, add the mail type plus the amount of zones crossed
 
-        print("The total cost is: " + str("%.2f" %round(price,2)).lstrip('0'))                                       # prints the message inside the quotes and shows the total price
+        print("The total cost is: " + str("%.2f" %price).lstrip('0'))                                       # prints the message inside the quotes and shows the total price
 
         while True:                                         # creates a loop inside the first loop
             resp_again = input(" do you want to send another package? y/n: ")                                       # prints the message inside the quotes and allows the user to respond
