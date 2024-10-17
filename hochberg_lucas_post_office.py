@@ -78,17 +78,17 @@ def get_cost(mail_type, distance): # creates the function "get_cost" and the var
     '''
     # the code below stores the variables and calculations used to find price, which is defined above
     if mail_type=="postcard": 
-        return 0.20 + 0.03*(distance)
+        return .20 + .03*(distance)
     elif mail_type=="large postcard": 
-        return 0.37 + 0.03*(distance) 
+        return .37 + .03*(distance) 
     elif mail_type=="envelope": 
-        return 0.37 + 0.04*(distance) 
+        return .37 + .04*(distance) 
     elif mail_type=="large envelope":
-        return 0.60 + 0.05*(distance) 
+        return .6 + .05*(distance) 
     elif mail_type=="package": 
-        return 2.95 + 0.25*(distance) 
+        return 2.95 + .25*(distance) 
     elif mail_type=="large package": 
-        return 3.95 + 0.35*(distance) 
+        return 3.95 + .35*(distance) 
 
 def main():                                         # creates the function "main" which serves as the starting point for the code
     while True:                                         # creates a loop
@@ -106,7 +106,7 @@ def main():                                         # creates the function "main
         distance = abs(get_zone(zip1) - get_zone(zip2))                                         # distance is equal to the absolute value of zipcode 1 minus zipcode 2
         price = get_cost(mail_type, distance)                                       # in order to get the cost, add the mail type plus the amount of zones crossed
 
-        print("The total cost is: " + str(price))                                       # prints the message inside the quotes and shows the total price
+        print("The total cost is: " + str("%.2f" %round(price,2)).lstrip('0'))                                       # prints the message inside the quotes and shows the total price
 
         while True:                                         # creates a loop inside the first loop
             resp_again = input(" do you want to send another package? y/n: ")                                       # prints the message inside the quotes and allows the user to respond
