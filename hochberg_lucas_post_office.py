@@ -1,5 +1,5 @@
 # Name: Lucas Hochberg
-# Log: 1.0
+# Log: 1.1
 # Bonus Features: None
 # Bugs: When something unmailable is entered into the data, instead of printing "unmailable," it prints "invalid response." When an invalid zipcode is entered, the code states the zipcode is invalid and ends but is not clear.
 # Description: Determines the price of mailing something based on its length, height, and thickness. Also adds extra cost based on how many zones it needs to pass through.
