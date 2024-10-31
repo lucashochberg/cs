@@ -3,7 +3,7 @@
 # Bugs: If you run the code more than once, the words add up onto each other in the csv
 # Features: None
 # Sources: Python for Everybody
-# Log: 1.1
+# Log: 1.0
 
 import string                                       # gives access to the string function
 
