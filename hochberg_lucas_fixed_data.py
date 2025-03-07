@@ -4,11 +4,11 @@
 # Bugs: None
 # Description: Writes high school information data to a csv
 
-fhand = open(r"c:\Users\lhochberg26\Documents\CS Stuff\Computer Science\CS2\student_data_cs2.txt", "r") # open the input file in read mode
-output = open(r"c:\Users\lhochberg26\Documents\CS Stuff\Computer Science\CS2\write_student_data.csv", "w") # open the output file in write mode
+fhand = open(r"c:\Users\lhochberg26\Documents\CS Stuff\Computer Science\CS2\student_data_cs2.txt", "r")             # open the input file in read mode
+output = open(r"c:\Users\lhochberg26\Documents\CS Stuff\Computer Science\CS2\write_student_data.csv", "w")          # open the output file in write mode
 
-for line in fhand: # iterate through each line of input file
-    id = (line[0:6]).strip() # take characters from lines 0-6 and delete any spaces
+for line in fhand:                                                                                                  # iterate through each line of input file
+    id = (line[0:6]).strip()                                                                                        # take characters from lines 0-6 and delete any spaces
     first_name = (line[6:21]).strip()
     last_name = (line[21:36]).strip()
     grade = (line[36:42]).strip()
